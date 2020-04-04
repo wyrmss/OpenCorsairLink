@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[es_ES]=Controlador de la refrigeracion liquida Corsair
+Comment=Controlador de la refrigeracion liquida Corsair
+Exec=/home/wyrms/bin/OpenCorsairLink/ver-tiempo-real.sh
+GenericName[es_ES]=Controlador de la refrigeracion liquida Corsair
+GenericName=Controlador de la refrigeracion liquida Corsair
+Icon=/home/wyrms/bin/OpenCorsairLink/opencorsairlink.png
+MimeType=
+Name[es_ES]=OpenCorsairLink
+Name=OpenCorsairLink
+Path=/home/wyrms/bin/OpenCorsairLink
+StartupNotify=true
+Terminal=true
+TerminalOptions=\s--noclose
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=none
+X-KDE-SubstituteUID=false
+X-KDE-Username=
