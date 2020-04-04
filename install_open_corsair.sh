@@ -64,7 +64,6 @@ cd /home/$USER/bin/OpenCorsairLink
 sudo make uninstall
 rm -vrf /home/$USER/.config/autostart-scripts/OpenCorsairLink.sh
 rm -vrf /home/$USER/Escritorio/OpenCorsair
-rm -vrf /home/$USER/bin/OpenCorsairLink/ver-tiempo-real.sh
 rm -vrf /home/$USER/bin/OpenCorsairLink/
 echo
 echo "Desinstalación terminada"
