@@ -1,4 +1,4 @@
-Script para automatizar la instalacion de lcurse en OpenSuse tumbleweed
+Script para automatizar la instalacion de OpenCorsairLink en OpenSuse tumbleweed
 
 Ejecutar:
 
