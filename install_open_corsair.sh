@@ -31,9 +31,10 @@ echo
 mv -i OpenCorsairLink/ /home/$USER/bin/OpenCorsairLink
 cp -i ver-tiempo-real.sh /home/$USER/bin/OpenCorsairLink/ver-tiempo-real.sh
 cp -i opencorsairlink.png /home/$USER/bin/OpenCorsairLink/opencorsairlink.png
-cd /home/$USER/bin/OpenCorsairLink
+cp -i install_open_corsair.sh 
+In -s /home/$USER/bin/OpenCorsairLink/OpenCorsairLink.sh /home/$USER/.config/autostart-scripts/OpenCorsairLink.sh
 chmod +x ver-tiempo-real.sh
-
+chmod +x OpenCorsairLink.sh
 echo
 # Ejecutar ayuda del programa
 sudo ./OpenCorsairLink.elf --device=0 --fan channel=1,mode=6,temps=31:33:36:38,speeds=30:55:65:100
@@ -44,12 +45,6 @@ echo
 make
 sudo make install
 
-echo "#!/bin/bash
-
-cd /home/$USER/bin/OpenCorsairLink/
-sudo ./OpenCorsairLink.elf --device=0 --fan channel=1,mode=6,temps=31:33:36:38,speeds=30:55:65:100
-sudo ./OpenCorsairLink.elf --device=0 --fan channel=0,mode=6,temps=31:33:36:38,speeds=30:55:65:100 --led channel=0,mode=5,colors=00FF00:FFFF00:FF0000,temps=33:36:39 --pump mode=4" >> /home/$USER/.config/autostart-scripts/OpenCorsairLink.sh
-chmod +x /home/$USER/.config/autostart-scripts/OpenCorsairLink.sh
 echo
 echo "Instalacióm terminada"
 echo
@@ -64,6 +59,7 @@ cd /home/$USER/bin/OpenCorsairLink
 sudo make uninstall
 rm -vrf /home/$USER/.config/autostart-scripts/OpenCorsairLink.sh
 rm -vrf /home/$USER/Escritorio/OpenCorsair
+rm -vrf /home/$USER/bin/OpenCorsairLink/ver-tiempo-real.sh
 rm -vrf /home/$USER/bin/OpenCorsairLink/
 echo
 echo "Desinstalación terminada"
