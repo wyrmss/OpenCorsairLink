@@ -33,6 +33,7 @@ cp -i ver-tiempo-real.sh /home/$USER/bin/OpenCorsairLink/ver-tiempo-real.sh
 cp -i opencorsairlink.png /home/$USER/bin/OpenCorsairLink/opencorsairlink.png
 cp -i OpenCorsairLink.sh /home/$USER/bin/OpenCorsairLink/OpenCorsairLink.sh
 ln -s /home/$USER/bin/OpenCorsairLink/OpenCorsairLink.sh /home/$USER/.config/autostart-scripts/OpenCorsairLink.sh
+cd /home/wyrms/bin/OpenCorsairLink/
 chmod +x ver-tiempo-real.sh
 chmod +x OpenCorsairLink.sh
 echo
@@ -42,7 +43,6 @@ sudo ./OpenCorsairLink.elf --device=0 --fan channel=0,mode=6,temps=31:33:36:38,s
 sudo ./OpenCorsairLink.elf --help
 echo
 # Compilación del programa
-cd /home/wyrms/bin/OpenCorsairLink/
 make
 sudo make install
 
