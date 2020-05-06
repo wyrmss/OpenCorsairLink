@@ -43,8 +43,8 @@ sudo ./OpenCorsairLink.elf --help
 echo
 # Compilación del programa
 cd /home/wyrms/bin/OpenCorsairLink/
-#make
-#sudo make install
+make
+sudo make install
 
 echo
 echo "Instalacióm terminada"
