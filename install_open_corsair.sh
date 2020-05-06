@@ -29,9 +29,9 @@ echo
 
 # Ejecutar la instalación
 mv -i OpenCorsairLink/ /home/$USER/bin/OpenCorsairLink
-mv -i ver-tiempo-real.sh /home/$USER/bin/OpenCorsairLink/ver-tiempo-real.sh
-mv -i opencorsairlink.png /home/$USER/bin/OpenCorsairLink/opencorsairlink.png
-mv -i OpenCorsairLink.sh /home/$USER/bin/OpenCorsairLink/OpenCorsairLink.sh
+cp -i ver-tiempo-real.sh /home/$USER/bin/OpenCorsairLink/ver-tiempo-real.sh
+cp -i opencorsairlink.png /home/$USER/bin/OpenCorsairLink/opencorsairlink.png
+cp -i OpenCorsairLink.sh /home/$USER/bin/OpenCorsairLink/OpenCorsairLink.sh
 ln -s /home/$USER/bin/OpenCorsairLink/OpenCorsairLink.sh /home/$USER/.config/autostart-scripts/OpenCorsairLink.sh
 chmod +x ver-tiempo-real.sh
 chmod +x OpenCorsairLink.sh
